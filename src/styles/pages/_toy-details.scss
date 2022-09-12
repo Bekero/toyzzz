@@ -1,0 +1,46 @@
+.toy-details {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: $clr1;
+
+    >* {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .btn {
+        cursor: pointer;
+        width: 55px;
+        height: 30px;
+        border: rgb(255, 255, 255);
+        background-color: rgb(200, 189, 189);
+
+        &:hover {
+            background-color: $clr1;
+        }
+
+    }
+
+    .back-btn {
+        float: left;
+    }
+
+    .reviews-btn {
+        float: right;
+        width: 60px;
+    }
+
+    section img {
+        margin: auto;
+    }
+
+    .reviews-container {
+        display: block;
+        font-weight: bold;
+        list-style: none;
+        background-color: rgb(142, 132, 113);
+    }
+
+}

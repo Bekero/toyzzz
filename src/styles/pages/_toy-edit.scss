@@ -1,0 +1,76 @@
+.toy-edit {
+    width: 250px;
+    height: 650px;
+    margin: auto;
+    background-color: #54c490;
+    box-shadow: 0px 0px 20px 0px #756b6b;
+    text-align: center;
+
+    .edit-title {
+        text-align: center;
+    }
+
+    .name-input {
+        margin-top: 30px;
+        width: 150px;
+        height: 30px;
+    }
+
+    .price-input {
+        margin-top: 30px;
+        width: 150px;
+        height: 30px;
+    }
+
+    .save-btn {
+        position: absolute;
+        bottom: 150px;
+    }
+
+    .multiselect {
+        margin: auto;
+        width: 200px;
+
+        .selectBox {
+            position: relative;
+
+            select {
+                width: 100%;
+                font-weight: bold;
+            }
+
+            .overSelect {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+        }
+
+        select {
+            margin-top: 30px;
+            width: 150px;
+            height: 30px;
+        }
+
+        #checkboxes {
+            display: none;
+            border: 1px #dadada solid;
+
+            input {
+                margin: 5px;
+                font-weight: bold;
+            }
+
+            label {
+                display: block;
+
+                &:hover {
+                    background-color: #507aa4;
+                }
+            }
+        }
+    }
+
+}

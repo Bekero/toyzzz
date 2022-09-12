@@ -1,0 +1,78 @@
+.toy-edit {
+    width: 250px;
+    height: 650px;
+    margin: auto;
+    background-color: #54c490;
+    box-shadow: 0px 0px 20px 0px #756b6b;
+    text-align: center;
+}
+
+.toy-edit h1 {
+    text-align: center;
+}
+
+.toy-edit .name-input {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+}
+
+.toy-edit .price-input {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+}
+
+/* .toy-edit .save-btn-container .save-btn {
+} */
+
+.toy-edit .save-btn {
+    position: absolute;
+    bottom: 150px;
+}
+
+
+.toy-edit select {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+}
+
+.multiselect {
+    margin: auto;
+    width: 200px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.checkboxes label {
+    background-color: rgb(191, 88, 88);
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}

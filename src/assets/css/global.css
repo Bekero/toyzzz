@@ -1,0 +1,16 @@
+/* Basics */
+@import "basics/layout.css";
+@import "basics/variables.css";
+
+/* Pages */
+@import "pages/home-app.css";
+@import "pages/toy-app.css";
+@import "pages/toy-details.css";
+@import "pages/toy-edit.css";
+@import "pages/about-app.css";
+
+/* Components */
+@import "cmps/app-header.css";
+@import "cmps/toy-preview.css";
+@import "cmps/toy-list.css";
+@import "cmps/toy-filter.css";

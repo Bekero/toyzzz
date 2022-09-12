@@ -1,0 +1,12 @@
+
+.doughnut-container {
+    margin: auto;
+    width: 450px;
+    height: 450px;
+}
+
+.charts-container h2 {
+    text-decoration: underline;
+    margin-top: 10px;
+    text-align: center;
+}

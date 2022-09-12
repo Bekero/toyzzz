@@ -1,0 +1,31 @@
+.app-header {
+    background-color: var(--clr1);
+    color: whitesmoke;
+}
+
+.app-header nav>* {
+    margin-right: 15px;
+}
+
+.app-header>section {
+    display: flex;
+    align-items: center;
+}
+
+.app-header h1.logo {
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+.app-header .user {
+    flex-grow: 1;
+}
+
+.app-header .back {
+    flex-grow: 1;
+}
+
+.app-header nav {
+    display: flex;
+    gap: 15px;
+}

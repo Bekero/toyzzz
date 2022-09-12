@@ -1,0 +1,46 @@
+.toy-preview {
+    display: flex;
+    flex-direction: column;
+    background-color: #e91e630a;
+    text-align: center;
+    box-shadow: 3px 4px 15px #00000026;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: 37%;
+    background-position: 50% calc(100% - 50px);
+
+    .toy-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .delete-btn {
+        margin: auto;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--clr1);
+
+        &:hover {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.141);
+        }
+    }
+
+    .toy-price {
+        margin: 0;
+    }
+
+    .edit-btn {
+        text-decoration: none;
+        /* margin-top: 5px; */
+        font-weight: bold;
+    }
+
+    .edit-btn:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.141);
+    }
+
+}

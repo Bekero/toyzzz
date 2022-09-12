@@ -1,0 +1,49 @@
+.main-layout {
+    display: grid;
+
+    .simple-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-gap: 30px;
+    }
+
+    >* {
+        grid-column: 2;
+    }
+
+    @include for-really-extra-small-mobile-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-really-extra-small) minmax($layoutPadding, 1fr);
+    }
+
+    @include for-really-small-mobile-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-extra-small) minmax($layoutPadding, 1fr);
+    }
+
+    @include for-small-mobile-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-small-narrow) minmax($layoutPadding, 1fr);
+    }
+
+    @include for-normal-mobile-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-narrow) minmax($layoutPadding, 1fr);
+    }
+
+    @include for-narrow-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-narrow) minmax($layoutPadding, 1fr);
+    }
+
+    @include for-normal-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-normal) minmax($layoutPadding, 1fr);
+    }
+
+    @include for-wide-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-wide) minmax($layoutPadding, 1fr);
+    }
+
+}

@@ -1,0 +1,21 @@
+.main-app-container {
+
+    h2 {
+        text-align: center;
+    }
+
+    .add-toy-btn {
+        display: block;
+        width: 65px;
+        height: 20px;
+        background-color: var(--clr1);
+        text-align: center;
+        margin: auto;
+        text-decoration: none;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+}

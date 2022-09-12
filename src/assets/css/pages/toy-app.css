@@ -1,0 +1,17 @@
+.add-toy-btn {
+    display: block;
+    width: 65px;
+    height: 20px;
+    background-color: var(--clr1);
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+.add-toy-btn span {
+    font-weight: bold;
+}
+
+.main-app-container h2 {
+    text-align: center;
+}

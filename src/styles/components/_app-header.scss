@@ -1,0 +1,33 @@
+.main-header {
+    background-color: $clr1;
+    color: $clr3;
+
+    h1.logo {
+        flex-grow: 1;
+        font-weight: 600;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav>* {
+        margin-right: 15px;
+    }
+
+    
+    @include for-small-mobile-layout {
+        nav {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "cSpell.words": [
+        "Aviv",
+        "chartjs",
+        "cmps",
+        "Coxrk",
+        "fullname",
+        "Mzmn",
+        "Oggg",
+        "QUJC",
+        "Signup",
+        "Toyzzz",
+        "Vockvtvf"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#b2f2f1",
+        "activityBar.background": "#b2f2f1",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#e677e8",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#b2f2f1",
+        "statusBar.background": "#87eae9",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#5ce2e1",
+        "statusBarItem.remoteBackground": "#87eae9",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#87eae9",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#87eae999",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#87eae9"
+}

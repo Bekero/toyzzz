@@ -1,0 +1,10 @@
+.toy-filter {
+    display: flex;
+    justify-content: center;
+}
+
+.toy-filter .filter-input {
+    display: block;
+    border-radius: 8px;
+    height: 30px;
+}
