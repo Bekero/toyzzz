@@ -11,13 +11,15 @@ import { PricesByTypeChart } from './cmps/prices-by-type-chart'
 import { Login } from './pages/login'
 import { InventoryStockChart } from './cmps/inventory-stock-chart'
 import { SignUp } from './pages/sign-up.jsx'
+import NavBar from './cmps/nav-bar';
 
 
 function App() {
 
   return (
     <div className="main-layout">
-      <AppHeader />
+      {/* <AppHeader /> */}
+      {/* <NavBar /> */}
       <main>
         <Routes>
           <Route path='toy/edit/:id' element={<ToyEdit />} />

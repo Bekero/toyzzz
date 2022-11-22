@@ -6,13 +6,15 @@ import './styles/styles.scss';
 // import './assets/css/global.css';
 import App from './root-cmp';
 import { store } from './store';
-
+import NavBar from './cmps/nav-bar';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <Provider store={store}>
     <Router>
+    <NavBar />
       <App />
     </Router>
   </Provider>

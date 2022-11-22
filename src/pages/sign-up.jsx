@@ -30,12 +30,15 @@ export const SignUp = () => {
                 <div>
                     <h2>Sign Up</h2>
                     <form onSubmit={getUserDetails}>
-                        <label>User Name: </label>
-                        <input placeholder="Enter Username.." type="text" /><br></br>
-                        <label>Password: </label>
-                        <input placeholder="Enter Password.." type="password" /><br></br>
-                        <label>Full Name: </label>
-                        <input placeholder="Enter FullName.." type="text" /><br />
+                        <label>User Name: 
+                            <input placeholder="Enter Username.." type="text" /><br></br>
+                        </label>
+                        <label>Password: 
+                            <input placeholder="Enter Password.." type="password" /><br></br>
+                        </label>
+                        <label>Full Name: 
+                            <input placeholder="Enter FullName.." type="text" /><br />
+                        </label>
                         <button className="btn">Sign Up</button>
                     </form>
                 </div>

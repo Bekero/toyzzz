@@ -26,7 +26,7 @@ export function GoogleToyMap() {
         <div className="map-container">
             <GoogleMapReact
                 onClick={onClick}
-                bootstrapURLKeys={{ key: "AIzaSyDvMT3VockvtvfGVxJMzmnO3RIHelOgggU" }}
+                bootstrapURLKeys={{ key: "AIzaSyBGPAsT9x_h67t1em2MJJNzyup4-FGFC_I"}}
                 center={coordinates}
                 defaultZoom={zoom}
             >
