@@ -58,7 +58,8 @@ export const ToyEdit = () => {
                     ref={inputRef}
                     value={toy.name}
                     onChange={handleChange}
-                    type="text" name="name"
+                    type="text" 
+                    name="name"
                     id="name" />
                 <br></br>
                 <label htmlFor="price">Price</label>

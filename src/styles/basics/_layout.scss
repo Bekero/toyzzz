@@ -3,7 +3,9 @@
 
     .simple-cards-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        // grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(180px, 180px));
+        justify-content: center;
         grid-gap: 30px;
     }
 
@@ -18,7 +20,8 @@
 
     @include for-really-small-mobile-layout {
         grid-template-columns:
-            minmax($layoutPadding, 1fr) minmax(auto, $break-extra-small) minmax($layoutPadding, 1fr);
+            minmax($layoutPadding, 1fr) minmax(auto, $break-smth-small) minmax($layoutPadding, 1fr);
+            // minmax($layoutPadding, 1fr) minmax(auto, $break-extra-small) minmax($layoutPadding, 1fr);
     }
 
     @include for-small-mobile-layout {
@@ -38,7 +41,12 @@
 
     @include for-normal-layout {
         grid-template-columns:
-            minmax($layoutPadding, 1fr) minmax(auto, $break-normal) minmax($layoutPadding, 1fr);
+        minmax($layoutPadding, 1fr) minmax(auto, $break-normal) minmax($layoutPadding, 1fr);
+    }
+    
+    @include for-normal-wide-layout {
+        grid-template-columns:
+            minmax($layoutPadding, 1fr) minmax(auto, $break-normal-wide) minmax($layoutPadding, 1fr);
     }
 
     @include for-wide-layout {

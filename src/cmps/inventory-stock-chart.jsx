@@ -72,6 +72,6 @@ export function InventoryStockChart() {
         data.datasets[0].data.push(((inventoryByType[i] / keyCount) * 100))
     }
     return (
-        <div className="doughnut-container"><Doughnut data={data} />Inventory By Stock .</div>
+        <div className="doughnut-container"><Doughnut data={data} /><h3>Inventory By Stock .</h3></div>
     )
 }

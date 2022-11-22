@@ -5,6 +5,8 @@
     h1.logo {
         flex-grow: 1;
         font-weight: 600;
+        margin-top: 0px;
+        margin-left: 15px;
     }
 
     section {
@@ -15,14 +17,36 @@
     nav {
         display: flex;
         flex-direction: column;
+        padding-bottom: 13px;
         gap: 5px;
+    }
+
+    .auth-container {
+        display: flex;
+        justify-content: flex-end;
+
+        .auth-link {
+            margin: 10px;
+            color: $clr3;
+            text-decoration: none;
+
+            &:active {
+                color: #A5C9CA;
+            }
+        }
     }
 
     nav>* {
         margin-right: 15px;
+        color: $clr3;
+        text-decoration: none;
+
+        &:active {
+            color: #A5C9CA;
+        }
     }
 
-    
+
     @include for-small-mobile-layout {
         nav {
             display: flex;

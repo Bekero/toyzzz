@@ -66,6 +66,6 @@ export function PricesByTypeChart() {
     }
 
     return (
-        <div className="doughnut-container"><Doughnut data={data} />Prices By Type .</div>
+        <div className="doughnut-container"><Doughnut data={data} /><h3>Prices By Type .</h3></div>
     )
 }

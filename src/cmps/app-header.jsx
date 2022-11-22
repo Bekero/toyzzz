@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
-import { loadUsers, removeUser, onLogin, onSignup, onLogout, loadUser } from '../store/actions/user.actions'
+import { onLogout } from '../store/actions/user.actions'
 import { useEffect } from "react";
 
 export const AppHeader = () => {
@@ -13,6 +13,10 @@ export const AppHeader = () => {
 
     return (
         <header className='main-header'>
+            <div className="auth-container">
+                {!user && <NavLink className="auth-link" to="/signUp">Sign Up</NavLink>}
+                {!user && <NavLink className="auth-link" to="/login">Log In</NavLink>}
+            </div>
 
             <section className='container'>
                 <h1 className="logo">Toyzzz .</h1>
@@ -23,8 +27,6 @@ export const AppHeader = () => {
                     <NavLink to='/toy' >Toys</NavLink>
                 </nav>
             </section>
-            {!user && <NavLink to="/signUp">Sign Up!</NavLink>} | |
-            {!user && <NavLink to="/login">Sign In!</NavLink>}
             {user && <span>Hello {user.fullname}</span>}
             {user && <button onClick={() => dispatch(onLogout())}>Log Out</button>}
         </header>

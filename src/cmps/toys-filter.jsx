@@ -1,12 +1,17 @@
 import { useFormRegister } from '../hooks/useFormRegister'
+import Switch from '@mui/material/Switch';
 
 export const ToyFilter = (props) => {
 
-    const [register] = useFormRegister({
+    const [register, setFilterBy, filterBy] = useFormRegister({
         name: '',
-        price: '',
-        date: new Date(),
+        inStock: false,
+        price: 0
     }, props.onChangeFilter)
+
+    const onCheck = (...args) => {
+        setFilterBy((prevFilterBy) => ({ ...prevFilterBy, inStock: args[1] }))
+    }
 
     const classObj = { className: 'toy-filter' }
     return (
@@ -20,6 +25,10 @@ export const ToyFilter = (props) => {
                 <label htmlFor="price">Max-Price</label>
                 <input className="filter-input" placeholder="Filter By Price: " {...register('price', 'number')} />
             </section>
+            <div>
+                <label>Show in Stock</label>
+                <Switch onChange={onCheck} checked={filterBy.inStock} />
+            </div>
         </form>
     )
 }

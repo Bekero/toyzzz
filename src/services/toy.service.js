@@ -11,28 +11,33 @@ export const toyService = {
 
 const BASE_URL = `toy/`
 
-function query(filterBy = { name: '', price: '' }) {
-    return httpService.get(BASE_URL, { params: filterBy }).then(toys => toys)
+async function query(filterBy = {}) {
+    const toys = await httpService.get(BASE_URL, { params: filterBy })
+    return toys
 }
-function getById(toyId) {
-    return httpService.get(BASE_URL + toyId).then(toy => toy)
+async function getById(toyId) {
+    const toy = await httpService.get(BASE_URL + toyId)
+    return toy
 }
-function remove(toyId) {
-    return httpService.delete(BASE_URL + toyId).then(toys => toys)
+async function remove(toyId) {
+    const toy = await httpService.delete(BASE_URL + toyId)
+    return toy
 }
 
 function getEmptyToy() {
     return {
         name: '',
-        price: ''
+        inStock: ''
     }
 }
 
-function save(toy) {
+async function save(toy) {
     if (toy._id) {
-        return httpService.put(BASE_URL + toy._id, toy).then(toys => toys)
+        const res = httpService.put(BASE_URL + toy._id, toy).then(toys => toys)
+        return res
     } else {
-        return httpService.post(BASE_URL, toy)
+        const res = httpService.post(BASE_URL, toy)
+        return res
             .then(toys => toys)
     }
 }

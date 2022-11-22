@@ -36,7 +36,7 @@ export const SignUp = () => {
                         <input placeholder="Enter Password.." type="password" /><br></br>
                         <label>Full Name: </label>
                         <input placeholder="Enter FullName.." type="text" /><br />
-                        <button>Sign Up</button>
+                        <button className="btn">Sign Up</button>
                     </form>
                 </div>
             }

@@ -8,7 +8,7 @@ import { ToyEdit } from './pages/toy-edit'
 import { ToyDetails } from './pages/toy-details.jsx'
 import { ChartApp } from './pages/chart-app.jsx'
 import { PricesByTypeChart } from './cmps/prices-by-type-chart'
-import { Login } from './cmps/login'
+import { Login } from './pages/login'
 import { InventoryStockChart } from './cmps/inventory-stock-chart'
 import { SignUp } from './pages/sign-up.jsx'
 

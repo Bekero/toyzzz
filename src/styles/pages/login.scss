@@ -1,0 +1,30 @@
+.login-container {
+    h2 {
+        text-align: center;
+    }
+
+    div {
+        text-align: center;
+        background-color: rgba(44, 133, 141, 0.246);
+
+
+        input {
+            width: 30%;
+            height: 25px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 150px;
+            height: 35px;
+
+            &:active {
+                background-color: $clr1;
+                border: none;
+            }
+        }
+    }
+}

@@ -36,6 +36,12 @@
     }
 }
 
+@mixin for-normal-wide-layout {
+    @media (min-width: $break-normal-wide) {
+        @content;
+    }
+}
+
 @mixin for-wide-layout {
     @media (min-width: $break-wide) {
         @content;

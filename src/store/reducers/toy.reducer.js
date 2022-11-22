@@ -1,9 +1,7 @@
 
-
 const INITIAL_STATE = {
     toys: null,
     filterBy: null,
-    // isLoading: false
 }
 
 export function toyReducer(state = INITIAL_STATE, action) {
@@ -12,30 +10,25 @@ export function toyReducer(state = INITIAL_STATE, action) {
 
         case 'SET_TOYS':
             return {
-                ...state,
-                toys: action.toys
+                ...state, toys: action.toys
             }
         case 'ADD_TOY':
             return {
-                ...state,
-                toys: [...state.toys, action.toy]
+                ...state, toys: [...state.toys, action.toy]
             }
         case 'REMOVE_TOY':
             return {
-                ...state,
-                toys: state.toys.filter(toy => toy._id !== action.toyId)
+                ...state, toys: state.toys.filter(toy => toy._id !== action.toyId)
             }
         case 'UPDATE_TOY':
             return {
-                ...state,
-                toys: state.toys.map(toy => toy._id === action.toy._id ? action.toy : toy)
+                ...state, toys: state.toys.map(toy => toy._id === action.toy._id ? action.toy : toy)
             }
         case 'SET_FILTER_BY':
             return {
-                ...state,
-                filterBy: { ...action.filterBy }
+                ...state, filterBy: { ...action.filterBy }
             }
-
+            
         default:
             return state
     }
